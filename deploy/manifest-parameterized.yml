@@ -1,0 +1,9 @@
+---
+applications:
+- name: greeting-ui
+  timeout: 120
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+    SPRING_AUTOCONFIGURE_EXCLUDE: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+  routes:
+  - route: ((route)) 
